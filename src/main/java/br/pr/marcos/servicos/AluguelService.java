@@ -12,7 +12,7 @@ public class AluguelService {
 	
 	public NotaAluguel alugar(Filme filme) {
 		if (filme.getEstoque() == 0) 
-			throw new RuntimeException("Filme sem estoque");
+			throw new RuntimeException("Filme sem estoque"); //apagar
 		
 		NotaAluguel nota = new NotaAluguel();
 		nota.setPreco(filme.getAluguel());
